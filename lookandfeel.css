@@ -1,10 +1,9 @@
-#page_wrapper {
+/* PAGE SETUP */
+#page_wrapper { /* establishes main screen size and allows for responsive changes with different screens */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* RESET HTML STYLES */
 *{
 margin: 0px;
 padding: 0;
@@ -18,7 +17,7 @@ text-decoration: none;
 ul {list-style: none;}
 
 
-/* NAVBAR Styles */
+/* NAVBAR STYLES */
 
 .navbar_band {
 	display: flex;
@@ -36,16 +35,16 @@ ul {list-style: none;}
 	text-align: center;	
 }
 
-.logo {
+.logo { /* aligns the logo button within the navigation bar */
 display: flex;
 align-items: center;
 }
 
-.logo_img {
+.logo_img { 
 height: 60px;
 }
 
-.navbar ul{
+.navbar ul { /* styles the navigation buttons within the navigation bar */
 	padding: 0px;	
 	margin: auto;
 	display: flex;
@@ -55,7 +54,7 @@ height: 60px;
 	width: 80%;
 }
 
-.navbar a{
+.navbar a {
 	color: #0097b2;
 	font-family: Perpetua, Georgia, serif;
 	font-weight: bold;
@@ -63,7 +62,7 @@ height: 60px;
 	text-decoration: none;	
 }
 
-.navbar a:hover {
+.navbar a:hover { /* navbar text changes colour when hovering over it */
 	color: #14496d;
 }
 
@@ -76,28 +75,28 @@ body { 	margin-right: 0%;
 img {	display: block;
 	max-inline-size: 100%;
 }
-h1 {	font-family: "Pretty Dahlia", cursive;
+h1 {	font-family: "Pretty Dahlia", cursive; /* text style for "Hello" on homepage */
 	font-weight: normal;
 	font-size: 60px;
 	padding: 20px;
 	text-align: center;
 	color: #003333;
 }
-h2 {	font-family: "Pretty Dahlia", cursive;
+h2 {	font-family: "Pretty Dahlia", cursive; /* text style for all other page headers */
 	font-weight: normal;
 	font-size: 75px;
 	padding: 20px;
 	text-align: center;
 	color: #003333;
 }
-h3 {	font-family: Perpetua, Georgia, serif;
+h3 {	font-family: Perpetua, Georgia, serif; /* used for div class session-a */
 	font-weight: bold;
 	font-size: 35px;
 	padding: 10px;
 	text-align: left;
 	color: #003333;
 }
-h4 {	font-family: Perpetua, Georgia, serif;
+h4 {	font-family: Perpetua, Georgia, serif; /* used for div class session-b */
 	font-weight: bold;
 	font-size: 35px;
 	padding: 10px;
@@ -129,7 +128,7 @@ footer a { font-weight: bold; }
 
 #slider { overflow: hidden; }
 
-#slider figure {
+#slider figure { /* creates carousel ratation */
 	position: relative;
 	width: 500%;
 	margin: 0;
@@ -137,13 +136,13 @@ footer a { font-weight: bold; }
 	animation: 20s slider infinite;
 }
 
-#slider figure img {
+#slider figure img { /* shows only 1 photo at a time */
 	float: left;
 	width: 20%;
 }
 
 
-@keyframes slider {
+@keyframes slider { /* creates 4 seconds on each image and 1 second slide transition */
 	0% 	{ left: 0; }
 	20%	{ left: 0; }
 	25%  	{ left: -100%; }
@@ -156,8 +155,8 @@ footer a { font-weight: bold; }
 }
 
 
-
 /* HOME PAGE CONTENT */
+
 #introduction {
 	float: left;
 	width: 35%;
@@ -169,7 +168,9 @@ footer a { font-weight: bold; }
 	width: 65%;
 }
 
+
 /* PHOTO GRID */
+
 .container {
 	width: 99%;
 	margin: auto;
@@ -178,14 +179,14 @@ footer a { font-weight: bold; }
 	display: flex;
 	gap: 2px;
 }
-.column {
+.column { /* formats the 3 columns within the grid */
 	display: flex;
 	width: 33%;
 	flex-direction: column;
 	gap: 2px;
 
 }
-.grid-photo img {
+.grid-photo img { /* formats the images within each column evenly */
 	width: 100%;
 	border-radius: 5px;
 	object-fit: cover;
@@ -204,7 +205,7 @@ footer a { font-weight: bold; }
 	margin-right: 10%;
 }
 
-.session-a {
+.session-a { /* styles left-justified sessions block */
  	display: flex;
 	float: left;
 	width: 90%;
@@ -213,7 +214,7 @@ footer a { font-weight: bold; }
 	align-items: center;
 	margin-left: 10%;	
 }
-.session-b {
+.session-b { /* styles left-justified sessions block */
 	display: flex;
 	float: left;
 	width: 90%;
@@ -248,7 +249,7 @@ footer a { font-weight: bold; }
 	margin-right: 10%;
 	padding-top: 25px;
 }
-#headshot {
+#headshot { /* formats the picture beside the text */
 	float: left;
 	display: flex;
 	flex-direction: column;
@@ -261,7 +262,6 @@ footer a { font-weight: bold; }
 #biocontent {
 	display: flex;
 	gap: 5px;
-	
 	width: 60%;
 	align-items: center;
 	margin-top: 50px;
@@ -294,7 +294,7 @@ display: flex;
 	gap: 20px;
 }
 
-.contact-inputs {
+.contact-inputs { /* formats the boxes for each section of the form */
 	background-color: white;
 	color: #003333;
 	width: 400px;
@@ -316,7 +316,7 @@ display: flex;
 	color: #003333;
 	font-family: verdana, sans-serif;
 }
-.contact-form button {
+.contact-form button { /* formats the submit button */
 	display: flex;
 	align-items: center;
 	padding: 15px 30px;
