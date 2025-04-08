@@ -109,19 +109,71 @@ p {	font-family: garamond, serif;
 	padding: 10px;
 }
 
-footer {clear: left; 
+footer {
+	clear: left; 
 	clear: right;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	height: 50px;
 	padding: 5px;
 	padding-top: 50px;
 }
 
-footer p { 
+.footerfonts {
+	float: left;
+	width: 33%;
+	margin-left: 5px;
+	text-align: left; 
 	font-family: verdana, sans-serif;
 	font-size: 10px;
 	padding: 2px;
 }
 
-footer a { font-weight: bold; }
+.footercopyright {
+	float: left;
+	width: 33%;
+	margin: auto;
+	text-align: center; 
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	padding: 2px;
+}
+
+.footeremail {
+	float: left;
+	width: 33%; 
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	padding: 2px;
+	text-align: center;
+} 
+.footeremail a {
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	padding: 2px;
+	font-weight: bold;
+	margin-right: 5px;
+	text-align: center;
+}
+
+
+footer p {
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	padding: 2px;
+}
+
+footer a { 
+	font-family: verdana, sans-serif;
+	font-size: 10px;
+	padding: 2px;
+	font-weight: bold;
+	margin-right: 5px;
+	text-align: center; 
+}
 
 
 /* SLIDER STYLE */
@@ -188,7 +240,6 @@ footer a { font-weight: bold; }
 }
 .grid-photo img { /* formats the images within each column evenly */
 	width: 100%;
-	border-radius: 5px;
 	object-fit: cover;
 	justify-content: space-evenly;
 }
@@ -203,6 +254,7 @@ footer a { font-weight: bold; }
 	text-align: center;
 	margin-left: 10%;
 	margin-right: 10%;
+	border-radius: 5px;
 }
 
 .session-a { /* styles left-justified sessions block */
@@ -231,8 +283,13 @@ footer a { font-weight: bold; }
 .session-a img {
 	float: left;
 	padding: 0;
+	border-radius: 10px;
 }
-
+.session-b img {
+	float: left;
+	padding: 0;
+	border-radius: 10px;
+}
 .sessions h3 {
 	text-align: center;
 }
@@ -258,6 +315,8 @@ footer a { font-weight: bold; }
 	margin: auto;
 	align-items: center;
 }
+
+#headshot img { border-radius: 10px;}
 
 #biocontent {
 	display: flex;
@@ -329,6 +388,3 @@ display: flex;
 	outline: none;
   	cursor: pointer;
 }
-
-
-
