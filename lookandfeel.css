@@ -75,14 +75,14 @@ body { 	margin-right: 0%;
 img {	display: block;
 	max-inline-size: 100%;
 }
-h1 {	font-family: "Pretty Dahlia", cursive; /* text style for "Hello" on homepage */
+h1 {	font-family: "Pretty Dahlia", "Brush Script MT", cursive; /* text style for "Hello" on homepage */
 	font-weight: normal;
 	font-size: 60px;
 	padding: 20px;
 	text-align: center;
 	color: #003333;
 }
-h2 {	font-family: "Pretty Dahlia", cursive; /* text style for all other page headers */
+h2 {	font-family: "Pretty Dahlia", "Brush Script MT", cursive; /* text style for all other page headers */
 	font-weight: normal;
 	font-size: 75px;
 	padding: 20px;
